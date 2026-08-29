@@ -5,9 +5,8 @@ name: Windows Check PyPI Version
 # See https://github.com/Aider-AI/aider/issues/3699 for example.
 
 on:
-  schedule:
-    # Run once a day at 1 AM UTC (offset from Ubuntu check)
-    - cron: '0 1 * * *'
+  push:
+    branches: [main]
   workflow_dispatch: # Allows manual triggering
 
 jobs:
